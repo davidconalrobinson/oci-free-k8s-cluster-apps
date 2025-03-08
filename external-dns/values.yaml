@@ -1,0 +1,9 @@
+provider:
+  name: oci
+extraVolumes:
+  - name: secrets
+    secret:
+      secretName: externa-dns-secret
+extraVolumeMounts:
+  - name: secrets
+    mountPath: /etc/kubernetes
