@@ -1,0 +1,10 @@
+apiVersion: builtin
+kind: HelmChartInflationGenerator
+metadata:
+  name: sops-secrets-operator
+name: sops-secrets-operator
+repo: https://isindir.github.io/sops-secrets-operator/
+version: "0.20.5"
+releaseName: sops-secrets-operator
+namespace: sops
+valuesFile: values.yaml

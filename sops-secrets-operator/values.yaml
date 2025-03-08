@@ -1,0 +1,9 @@
+extraEnv:
+  - name: SOPS_AGE_RECIPIENTS
+    value: age1x2w287dk7fgqd2srhzvgguqy3a9ft4q687sqqr5lva0sxdy0pseqdj23qw
+  - name: SOPS_AGE_KEY_FILE
+    value: "/mnt/age/age-private-key"
+secretsAsFiles:
+  - name: age-key
+    mountPath: /mnt/age/
+    secretName: age-private-key-secret
