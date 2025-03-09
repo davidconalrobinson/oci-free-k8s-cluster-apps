@@ -3,7 +3,7 @@ provider:
 extraVolumes:
   - name: secrets
     secret:
-      secretName: externa-dns-secret
+      secretName: external-dns-secret
 extraVolumeMounts:
   - name: secrets
     mountPath: /etc/kubernetes
