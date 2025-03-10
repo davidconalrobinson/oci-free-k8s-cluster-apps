@@ -2,7 +2,7 @@ config:
   existingSecret: oauth2-proxy-secret
   configFile: |
     provider = "github"
-    scope = "user:email"
+    scope = "read:org"
     github_org = "davidconalrobinson-org"
     email_domains = [ "*" ]
     cookie_domains = [ ".davidconalrobinson.com" ]
