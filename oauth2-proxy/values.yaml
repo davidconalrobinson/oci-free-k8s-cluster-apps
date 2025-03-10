@@ -1,5 +1,12 @@
 config:
   existingSecret: oauth2-proxy-secret
+  configFile: |
+    provider = "github"
+    scope = "user:email"
+    github_org = "davidconalrobinson-org"
+    email_domains = [ "*" ]
+    cookie_domains = [ ".davidconalrobinson.com" ]
+    whitelist_domains = [ ".davidconalrobinson.com" ]
 ingress:
   enabled: true
   path: /
