@@ -3,6 +3,6 @@ kind: Kustomization
 
 namespace: sops-secrets-operator
 resources:
-- https://raw.githubusercontent.com/isindir/sops-secrets-operator/0.14.3/config/crd/bases/isindir.github.com_sopssecrets.yaml
+- https://raw.githubusercontent.com/isindir/sops-secrets-operator/0.21.0/config/crd/bases/isindir.github.com_sopssecrets.yaml
 generators:
 - chart.yaml
